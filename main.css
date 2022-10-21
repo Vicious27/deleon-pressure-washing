@@ -2,10 +2,6 @@
   --main-blue-color:#01b1fdc4;
   --nav-text: whitesmoke;
   --on-hover-color: rgba(35, 38, 43, 0.858);
-  --mobile: 768px;
-  --tablet: 992px;
-  --laptop: 1324px;
-  --desktop: 2024px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
@@ -14,12 +10,19 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+  opacity: 95%;
+  line-height: 1.2;
   font-family: 'Playfair Display', serif;
-  background: rgba(15, 27, 31, 0.858);
+  background-color: rgba(15, 27, 31, 0.858);
 }
+
 
 /*--------------------------------- NAVBAR ----------------------------*/
 
@@ -32,24 +35,22 @@ body {
   width: 100%;
   z-index: 1;
   background-color: var(--main-blue-color);
-  padding: .4em;
   box-shadow: 0 5px 15px rgba(17, 16, 16, 0.189);
   font-size: 1.3rem;
-  border-bottom-left-radius: .2em;
-  border-bottom-right-radius: .2em;
+  border-bottom-left-radius: .1em;
+  border-bottom-right-radius: .1em;
 }
 
 #phone {
   height: 45px;
   border-radius: 1em;
-  margin: 0 .6em;
+  margin: .2em .6em;
 }
 
 .free-quote {
   display: flex;
   width: fit-content;
   font-size: 1.3rem;
-  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   color: var(--nav-text);
   cursor: pointer;
@@ -79,9 +80,8 @@ body {
   display: block;
 }
 
-.navbar-links a:hover {
+.navbar-links li a:hover {
   color: var(--on-hover-color);
-  width: fit-content;
   transition: ease-in-out 250ms;
 }
 
@@ -139,12 +139,23 @@ body {
 @media (max-width: 768px) {
   .toggle-button {
     display: flex;
-    margin: 0;
+    margin-top: .1em;
+  }
+
+  #phone {
+    height: 36px;
+    margin: .3em;
+  }
+
+  .free-quote {
+    font-size: 1.1rem;
   }
 
   .navbar-links {
     display: none;
     width: 100%;
+    text-align: center;
+    background: rgba(22, 15, 15, 0.873);
   }
 
   .navbar {
@@ -157,17 +168,13 @@ body {
     width: 100%;
   }
 
+  .navbar-links li a:hover {
+    background-color: #0202024f;
+    color: var(--nav-text);
+  }
+
   .navbar-links.active {
     display: flex;
   }
-
 }
-
-
-
-
-
-
-
-
 
