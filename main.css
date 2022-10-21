@@ -1,6 +1,7 @@
 :root {
   --main-blue-color:#01b1fdc4;
   --nav-text: whitesmoke;
+  --on-hover-color: rgba(35, 38, 43, 0.858);
   --mobile: 768px;
   --tablet: 992px;
   --laptop: 1324px;
@@ -19,6 +20,14 @@ body {
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--main-blue-color);
   padding: .6em;
   box-shadow: 0 5px 15px rgba(17, 16, 16, 0.189);
 }
@@ -31,6 +40,7 @@ body {
 
 .free-quote {
   display: flex;
+  width: fit-content;
   font-size: 1.3rem;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
@@ -39,6 +49,38 @@ body {
 }
 
 .free-quote:hover {
-  color: rgba(23, 28, 32, 0.885);
+  color: var(--on-hover-color);
+  width: fit-content;
   transition: ease-in-out 250ms;
 }
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style-type: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--nav-text);
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links a:hover {
+  color: var(--on-hover-color);
+  width: fit-content;
+  transition: ease-in-out 250ms;
+}
+
+.navbar-links:hover {
+  color: var(--on-hover-color);
+}
+
+
