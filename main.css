@@ -1,0 +1,44 @@
+:root {
+  --main-blue-color:#01b1fdc4;
+  --nav-text: whitesmoke;
+  --mobile: 768px;
+  --tablet: 992px;
+  --laptop: 1324px;
+  --desktop: 2024px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: rgba(15, 27, 31, 0.858);
+}
+
+.navbar {
+  padding: .6em;
+  box-shadow: 0 5px 15px rgba(17, 16, 16, 0.189);
+}
+
+#phone {
+  height: 45px;
+  border-radius: 1em;
+  margin: 0 .6em;
+}
+
+.free-quote {
+  display: flex;
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: var(--nav-text);
+  cursor: pointer;
+}
+
+.free-quote:hover {
+  color: rgba(23, 28, 32, 0.885);
+  transition: ease-in-out 250ms;
+}
