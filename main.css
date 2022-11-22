@@ -161,6 +161,27 @@ header {
   transition-duration: 0.25s;
 }
 
+/*--------------------------------- Motto/ Who we are ----------------------------*/
+
+#who-we-are {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  border: solid 2px blue;
+}
+
+#henry-carlos-img {
+  border: solid 2px white;
+}
+
+#about-us {
+  border: solid 2px white;
+}
+
+
+
+
+
 /*--------------------------------- GALLERY ----------------------------*/
 
 /*--------------------------------- REVIEWS ----------------------------*/
@@ -222,6 +243,11 @@ header {
     font-size: 1.2em;
     margin-bottom: 2rem;
     color: rgba(0, 0, 0, 0.896);
+  }
+
+  #who-we-are {
+    display: block;
+    height: auto;
   }
 }
 
