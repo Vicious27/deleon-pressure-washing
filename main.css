@@ -153,17 +153,9 @@ body {
   font-size: 2rem;
 }
 
-#about-grid {
-  margin: auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2 / 4fr);
-  grid-template-rows: 2;
+#about {
   background-color: var(--main-blue-color);
-}
-
-#about-grid h1 {
-  color: var(--nav-text);
+  padding: .4em;
 }
 
 .about-section img {
