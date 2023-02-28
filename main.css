@@ -155,12 +155,14 @@ body {
 
 #about {
   background-color: var(--main-blue-color);
-  padding: .4em;
+  /* padding: .4em; */
 }
 
 .about-section img {
   width: 100%;
   height: auto;
+  padding: 2em 2em;
+  border-radius: 3%;
 }
 
 .about-section {
@@ -169,6 +171,19 @@ body {
 }
 
 /*--------------------------------- GALLERY ----------------------------*/
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  background-color: var(--main-blue-color);
+  padding: 0 2em;
+}
+
+#gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
 
 /*--------------------------------- REVIEWS ----------------------------*/
 
