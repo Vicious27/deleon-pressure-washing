@@ -155,7 +155,6 @@ body {
 
 #about {
   background-color: var(--main-blue-color);
-  /* padding: .4em; */
 }
 
 .about-section img {
@@ -163,11 +162,6 @@ body {
   height: auto;
   padding: 2em 2em;
   border-radius: 3%;
-}
-
-.about-section {
-  font-size: 1rem;
-  border-radius: 0.5rem;
 }
 
 /*--------------------------------- GALLERY ----------------------------*/
@@ -193,6 +187,19 @@ body {
 /*--------------------------------- CONTACT SECTION ----------------------------*/
 
 /*------------------------------------- MEDIA QUERYS----- ----------------------------*/
+
+@media (max-width: 480px) {
+  #call-to-action {
+    margin-top: -3.5rem;
+  }
+  .about-section img {
+    padding: 1em 1.3em;
+  }
+  #gallery {
+    /*make it display flex or touch carousel*/
+    padding: 0 1.3em;
+  }
+}
 
 @media (max-width: 768px) {
   .toggle-button {
