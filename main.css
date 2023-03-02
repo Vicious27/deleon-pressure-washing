@@ -181,7 +181,55 @@ body {
 }
 
 /*--------------------------------- REVIEWS ----------------------------*/
+#reviews {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-blue-color);
+  position: relative;
+  /* border: solid black 2px; */
+}
 
+#reviews .carousel {
+  white-space: nowrap;
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#reviews i {
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 46px;
+  background: white;
+  border-radius: 32%;
+  cursor: pointer;
+  margin: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#reviews i:first-child {
+  left: -23px;
+}
+#reviews i:last-child {
+  right: -23px;
+}
+
+.carousel img {
+  height: 340px;
+  width: calc(100% / 1);
+  object-fit: contain;
+  margin-left: 14px;
+}
+
+.carousel img:first-child {
+  margin-left: 0;
+}
 
 /*--------------------------------- SERVICES ----------------------------*/
 
