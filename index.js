@@ -40,7 +40,7 @@ const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0];
 const arrowIcons = document.querySelectorAll("#reviews i");
 
-let isDragStart = false, prevPageX, prevScrollLeft;
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
 //shows and hides prev/next icons according to carousel scroll left value
 const showHideIcons = () => {
@@ -59,6 +59,35 @@ arrowIcons.forEach( icon => {
   });
 });
 
+const autoSlide = () => {
+  //if there is no img left to scroll then return from here
+  if(carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
+
+  positionDiff = Math.abs(positionDiff); //makes positionDiff value to positive
+  firstImgWidth = firstImg.clientWidth + 14;
+  //getting difference value that needs to add or reduce from carousel left to take middle img center
+  let valDifference = firstImgWidth - positionDiff;
+
+  //if user is scrolling to the right
+  if(carousel.scrollLeft > prevScrollLeft) {
+    return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  }
+   //if user is scrolling to the left
+  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  ;
+};
+
+const dragging = (e) => {
+  //scrolling images/carousel to left according to mouse pointer
+  if(!isDragStart) return;
+  e.preventDefault();
+  isDragging = true;
+  carousel.classList.add("dragging");
+  positionDiff = (e.pageX || e.touches[0].pageX)  - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+  showHideIcons();
+}
+
 const dragStart = (e) => {
   //updates global variables value on mousedown event
   isDragStart = true;
@@ -69,16 +98,10 @@ const dragStart = (e) => {
 const dragStop = () => {
   isDragStart = false;
   carousel.classList.remove("dragging");
-}
 
-const dragging = (e) => {
-  //scrolling images/carousel to left according to mouse pointer
-  if(!isDragStart) return;
-  e.preventDefault();
-  carousel.classList.add("dragging");
-  let positionDiff = (e.pageX || e.touches[0].pageX)  - prevPageX;
-  carousel.scrollLeft = prevScrollLeft - positionDiff;
-  showHideIcons();
+  if(!isDragging) return;
+  isDragging = false;
+  autoSlide();
 }
 
 carousel.addEventListener("mousedown", dragStart);
