@@ -216,6 +216,7 @@ body {
 
 #reviews i:first-child {
   left: -23px;
+  display: none;
 }
 #reviews i:last-child {
   right: -23px;
