@@ -196,6 +196,7 @@ body {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #reviews i {
@@ -218,6 +219,15 @@ body {
 }
 #reviews i:last-child {
   right: -23px;
+}
+
+.carousel.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
 }
 
 .carousel img {

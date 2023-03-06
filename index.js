@@ -36,9 +36,19 @@ main.addEventListener("click", () => {
 });
 
 // Logic for carousel
-const carousel = document.querySelector(".carousel");
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0];
+const arrowIcons = document.querySelectorAll("#reviews i");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
+let firstImgWidth = firstImg.clientWidth + 14;
+
+arrowIcons.forEach( icon => {
+  icon.addEventListener("click", () => {
+    //if icon left is clicked, reduce width calue from the carousel scroll left, else it adds to it
+    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+  });
+});
 
 const dragStart = (e) => {
   //updates global variables value on mousedown event
@@ -49,12 +59,14 @@ const dragStart = (e) => {
 
 const dragStop = () => {
   isDragStart = false;
+  carousel.classList.remove("dragging");
 }
 
 const dragging = (e) => {
   //scrolling images/carousel to left according to mouse pointer
   if(!isDragStart) return;
   e.preventDefault();
+  carousel.classList.add("dragging");
   let positionDiff = e.pageX - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
