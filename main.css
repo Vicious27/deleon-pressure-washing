@@ -188,7 +188,6 @@ body {
   justify-content: center;
   background: var(--main-blue-color);
   position: relative;
-  /* border: solid black 2px; */
 }
 
 #reviews .carousel {
@@ -237,6 +236,9 @@ body {
   width: calc(100% / 1);
   object-fit: contain;
   margin-left: 14px;
+  border-top: solid whitesmoke 2px;
+  border-bottom: solid whitesmoke 2px;
+  border-radius: 45px;
 }
 
 .carousel img:first-child {
@@ -244,6 +246,17 @@ body {
 }
 
 /*--------------------------------- SERVICES ----------------------------*/
+#services {
+  background: var(--main-blue-color);
+}
+
+#services h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 1em;
+  margin: 0;
+}
 
 /*--------------------------------- CONTACT SECTION ----------------------------*/
 
