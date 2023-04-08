@@ -236,9 +236,6 @@ body {
   width: calc(100% / 1);
   object-fit: contain;
   margin-left: 14px;
-  border-top: solid whitesmoke 2px;
-  border-bottom: solid whitesmoke 2px;
-  border-radius: 45px;
 }
 
 .carousel img:first-child {
