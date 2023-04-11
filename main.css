@@ -245,14 +245,15 @@ body {
 /*--------------------------------- SERVICES ----------------------------*/
 #services {
   background: var(--main-blue-color);
+  text-align: center;
+  position: relative;
 }
 
-#services h1 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 2em;
-  padding-top: 1em;
-  margin: 0;
+#services img {
+  width: 100%;
+  height: auto;
+  padding: 2em 2em;
+  border-radius: 3%;
 }
 
 /*--------------------------------- CONTACT SECTION ----------------------------*/
@@ -275,6 +276,9 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px;
+  }
+  #services img {
+    padding: 1em 1.3em;
   }
 }
 
