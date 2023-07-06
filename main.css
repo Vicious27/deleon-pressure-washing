@@ -146,13 +146,6 @@ body {
 
 /*--------------------------------- ABOUT ----------------------------*/
 
-.grid-span-2 {
-  margin: auto;
-  text-align: center;
-  grid-column: 1 / span 2;
-  font-size: 2rem;
-}
-
 #about {
   background-color: var(--main-blue-color);
 }
@@ -161,8 +154,50 @@ body {
   width: 100%;
   height: auto;
   padding: 2em 2em;
+  padding-bottom: 1em;
   border-radius: 3%;
 }
+
+#our-commitment {
+  background: var(--on-hover-color);
+  height: auto;
+  border-radius: .5em;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto ;
+}
+
+#our-commitment h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  font-size: 6vw;
+  margin: auto;
+  color: var(--nav-text);
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.045),
+  1px 1px 1px rgba(0, 0, 0, 0.566),
+  1px -1px 0 rgba(0, 0, 0, 0.095),
+  -1px -1px 0 rgba(0, 0, 0, 0);
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.853));
+   border-bottom: inset 2px var(--main-blue-color);
+   border-bottom-left-radius: 12%;
+   border-bottom-right-radius: 12%;
+   padding: 4px;
+}
+
+#our-commitment p {
+  color: var(--nav-text);
+  margin: 8px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+  line-break: 15ch;
+  padding: 8px;
+}
+
 
 /*--------------------------------- GALLERY ----------------------------*/
 #gallery {
@@ -170,7 +205,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: masonry;
   background-color: var(--main-blue-color);
-  padding: 0 2em;
+  padding: 1em 2em;
 }
 
 #gallery img {
@@ -266,10 +301,11 @@ body {
   }
   .about-section img {
     padding: 1em 1.3em;
+    padding-top: 1.5em;
   }
   #gallery {
     /*make it display flex or touch carousel*/
-    padding: 0 1.3em;
+    padding: 1em 1.3em;
   }
   #reviews i {
     font-size: 1.2rem;
@@ -287,33 +323,27 @@ body {
     display: flex;
     margin-top: .1em;
   }
-
   #phone {
     height: 36px;
     margin: .3em;
   }
-
   .free-quote {
     font-size: 1.1rem;
   }
-
   .navbar-links {
     display: none;
     width: 100%;
     text-align: center;
     background: rgba(22, 15, 15, 0.873);
   }
-
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .navbar-links ul {
     flex-direction: column;
     width: 100%;
   }
-
   .navbar-links li a:hover {
     background-color: #0202024f;
     color: var(--nav-text);
@@ -321,5 +351,18 @@ body {
 
   .navbar-links.active {
     display: flex;
+  }
+}
+
+@media (min-width: 810px) {
+  #our-commitment h1 {
+    font-size: 2.6em;
+  }
+  #our-commitment p {
+    font-size: 1.2em;
+    line-break: 15ch;
+    width: 50%;
+    height: fit-content;
+    align-self: center;
   }
 }
