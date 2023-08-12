@@ -368,9 +368,11 @@ body {
     background-color: #0202024f;
     color: var(--nav-text);
   }
-
   .navbar-links.active {
     display: flex;
+  }
+  .our-commitment h1 {
+    font-size: 1.1em;
   }
 }
 
