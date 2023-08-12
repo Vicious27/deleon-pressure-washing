@@ -2,6 +2,7 @@
   --main-blue-color:#01b1fdc4;
   --nav-text: whitesmoke;
   --on-hover-color: rgba(35, 38, 43, 0.858);
+  --title-blue: rgba(87, 177, 255, 0.963);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
@@ -158,7 +159,7 @@ body {
   border-radius: 3%;
 }
 
-#our-commitment {
+.our-commitment {
   background: var(--on-hover-color);
   height: auto;
   border-radius: .5em;
@@ -169,7 +170,7 @@ body {
   margin: auto ;
 }
 
-#our-commitment h1 {
+.our-commitment h1 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -188,7 +189,7 @@ body {
    padding: 4px;
 }
 
-#our-commitment p {
+.our-commitment p {
   color: var(--nav-text);
   margin: 8px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -286,6 +287,12 @@ body {
 }
 
 /*--------------------------------- SERVICES ----------------------------*/
+#pricing {
+  background: var(--main-blue-color);
+  padding: 2em 2em;
+  padding-bottom: 1em;
+}
+
 #services {
   background: var(--main-blue-color);
   text-align: center;
@@ -368,17 +375,17 @@ body {
 }
 
 @media (min-width: 810px) {
-  #our-commitment h1 {
+  .our-commitment h1 {
     font-size: 2.6em;
   }
-  #our-commitment p {
+  .our-commitment p {
     font-size: 1.2em;
     line-break: 15ch;
     width: 50%;
     height: fit-content;
     align-self: center;
   }
-  #our-commitment {
+  .our-commitment {
     width: 780px;
   }
 }
