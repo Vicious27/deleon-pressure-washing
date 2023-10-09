@@ -322,6 +322,13 @@ height: 65px;
 }
 
 /*--------------------------------- CONTACT SECTION ----------------------------*/
+#contact p {
+  margin: auto;
+  padding-top: 5em;
+  text-align: center;
+  font-size: 2em;
+}
+
 
 /*------------------------------------- MEDIA QUERYS----- ----------------------------*/
 
