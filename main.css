@@ -181,12 +181,11 @@ body {
   width: fit-content;
   font-size: 6vw;
   margin: auto;
-  color: var(--main-black-color);
-  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.045),
+  color: #ff8c00f6;
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.468),
   1px 1px 1px rgba(0, 0, 0, 0.566),
-  1px -1px 0 rgba(0, 0, 0, 0.095),
-  -1px -1px 0 rgba(0, 0, 0, 0);
-  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.468));
+  1px -1px 0 rgba(0, 0, 0, 0.826),
+  -1px -1px 0 rgba(0, 0, 0, 0.16);
    /* border-bottom: inset 2px var(--main-black-color);
    border-bottom-left-radius: 12%;
    border-bottom-right-radius: 12%; */
