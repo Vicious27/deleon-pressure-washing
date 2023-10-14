@@ -313,6 +313,18 @@ body {
   padding-bottom: 1em;
 }
 
+#pricing h1 {
+  text-align: center;
+  font-size: 2em;
+  color: var(--title-blue);
+  text-decoration: solid underline black 1px;
+  text-underline-offset: 3px;
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.468),
+  1px 1px 1px rgba(0, 0, 0, 0.566),
+  1px -1px 0 rgba(0, 0, 0, 0.826),
+  -1px -1px 0 rgba(0, 0, 0, 0.16);
+}
+
 #services {
   background: var(--background-white);
   text-align: center;
@@ -324,15 +336,6 @@ body {
   height: auto;
   padding: 2em 2em;
   border-radius: 7%;
-}
-
-#icon-money {
-height: 65px;
-}
-
-#icon-tag {
-  height: 65px;
-  margin: auto;
 }
 
 /*--------------------------------- CONTACT SECTION ----------------------------*/
