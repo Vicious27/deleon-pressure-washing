@@ -3,6 +3,8 @@
   --background-white: white;
   --nav-text: rgba(245, 245, 245, 0.879);
   --nav-blue: rgba(32, 90, 156, 0.932);
+  --title-blue: #164fd3eb;
+  --p-blue: #0d1752f0;
   --on-hover-color: rgba(252, 83, 26, 0.929);
 }
 
@@ -33,7 +35,7 @@ body {
   font-size: 4vw;
   margin-top: -5rem;
   position: relative;
-  color: #164fd3eb;
+  color: var(--title-blue);
   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.468),
   1px 1px 2px rgba(0, 0, 0, 0.566),
   1px -1px 0 rgba(0, 0, 0, 0.826),
@@ -182,19 +184,17 @@ body {
   font-size: 6vw;
   margin: auto;
   color: #ff8c00f6;
+  text-decoration: underline solid var(--main-black-color) 1px;
+  text-underline-offset: 4px;
   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.468),
   1px 1px 1px rgba(0, 0, 0, 0.566),
   1px -1px 0 rgba(0, 0, 0, 0.826),
   -1px -1px 0 rgba(0, 0, 0, 0.16);
-   /* border-bottom: inset 2px var(--main-black-color);
-   border-bottom-left-radius: 12%;
-   border-bottom-right-radius: 12%; */
    padding: 4px;
 }
 
 .our-commitment p {
-  color: var(--main-black-color);
-
+  color: var(--p-blue);
   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.045),
   1px 1px 1px rgba(0, 0, 0, 0.566),
   1px -1px 0 rgba(0, 0, 0, 0.095),
@@ -220,8 +220,6 @@ body {
 /*--------------------------------- GALLERY ----------------------------*/
 #gallery {
   display: block;
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: masonry; */
   background-color: var(--background-white);
   padding: 1em 2em;
 }
@@ -230,6 +228,13 @@ body {
   margin-top: 4em;
   font-size: 2em;
   text-align: center;
+  color: var(--title-blue);
+  text-decoration: solid underline black 1px;
+  text-underline-offset: 3px;
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.468),
+  1px 1px 1px rgba(0, 0, 0, 0.566),
+  1px -1px 0 rgba(0, 0, 0, 0.826),
+  -1px -1px 0 rgba(0, 0, 0, 0.16);
 }
 
 #gallery img {
