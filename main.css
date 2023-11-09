@@ -237,6 +237,20 @@ body {
   -1px -1px 0 rgba(0, 0, 0, 0.16);
 }
 
+#gallery p {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding-top: 2em;
+  text-align: center;
+  color: #ff8c00f6;
+}
+
+#gallery .icon-water {
+  height: 45px;
+  width: 45px;
+}
+
 #gallery img {
   width: 100%;
   height: auto;
@@ -369,8 +383,15 @@ body {
     padding-top: 1.5em;
   }
   #gallery {
-    /*make it display flex or touch carousel*/
     padding: 1em 1.3em;
+  }
+  #gallery p {
+    font-size: 1.3em;
+  }
+  #gallery .icon-water {
+    height: 34px;
+    width: 34px;
+    margin: -2px;
   }
   #reviews i {
     font-size: 1.2rem;
