@@ -208,6 +208,14 @@ body {
   padding: 8px;
 }
 
+.bottom-phone {
+  color: #ff8c00f6;
+}
+
+.bottom-phone:hover {
+  color: var(--title-blue);
+}
+
 .icon-water {
   height: 24px;
 }
