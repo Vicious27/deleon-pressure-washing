@@ -453,9 +453,6 @@ body {
   .our-commitment h1 {
     font-size: 1.3em;
   }
-  #icon-money {
-    padding: 8px;
-  }
 }
 
 @media (min-width: 810px) {
@@ -471,5 +468,9 @@ body {
   }
   .our-commitment {
     width: 780px;
+  }
+  .bottom-phone {
+    align-self: center;
+    margin-right: 66px;
   }
 }
