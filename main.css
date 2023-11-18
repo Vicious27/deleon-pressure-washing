@@ -367,6 +367,10 @@ body {
   text-underline-offset: 4px;
 }
 
+.service-icons {
+  width: 70vw;
+}
+
 .pressure-washing-icon {
   margin-bottom: -1.2em;
 }
@@ -433,10 +437,24 @@ body {
   #services img {
     padding: 1em 1.3em;
   }
-
   .icon-contract {
     height: 24px;
     width: 24px;
+  }
+  .pressure-washing-icon {
+    margin-bottom: -.6em;
+  }
+  .roof-washing-icon {
+    margin-bottom: -2em;
+  }
+  #pricing p {
+    font-size: 1em;
+  }
+  p.service-p{
+    margin-bottom: -4em;
+  }
+  #pricing-padding {
+    padding-top: 1em;
   }
 }
 
@@ -495,5 +513,15 @@ body {
   .bottom-phone {
     align-self: center;
     margin-right: 66px;
+  }
+  .service-icons {
+    width: 400px;
+    margin: auto;
+  }
+  p.roof-p {
+    margin-top: -3.6em;
+  }
+  #pricing-padding {
+    padding-top: 2em;
   }
 }
