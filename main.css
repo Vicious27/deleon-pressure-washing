@@ -456,6 +456,9 @@ body {
   #pricing-padding {
     padding-top: 1em;
   }
+  p.pricing-p {
+    margin: 1.4em auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -523,5 +526,18 @@ body {
   }
   #pricing-padding {
     padding-top: 2em;
+  }
+  p.pricing-p {
+    margin: 1.6em auto;
+    width: auto;
+  }
+}
+
+@media (min-width: 1080px) {
+  .pricing-img{
+    width: 620px;
+  }
+  p.pricing-p {
+    width: auto;
   }
 }
