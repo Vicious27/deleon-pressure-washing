@@ -360,6 +360,29 @@ body {
   border-radius: 7%;
 }
 
+.service-title {
+  color: #ff8c00f6;
+  margin-top: 5em;
+  text-decoration: underline solid var(--main-black-color) 2px;
+  text-underline-offset: 4px;
+}
+
+.pressure-washing-icon {
+  margin-bottom: -1.2em;
+}
+
+.pressure-washing-gun {
+  margin-bottom: -3em;
+}
+
+.roof-washing-icon {
+  margin-bottom: -3em;
+}
+
+.roof-icon {
+  margin-bottom: -5em;
+}
+
 /*--------------------------------- CONTACT SECTION ----------------------------*/
 #contact p {
   margin: auto;
