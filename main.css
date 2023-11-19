@@ -407,12 +407,21 @@ body {
   -1px -1px 0 rgba(0, 0, 0, 0.16);
 }
 
-#contact img {
+#deleon-carlos-contact {
   width: 100%;
   height: auto;
   padding: 2em 2em;
+  margin: auto;
   border-radius: 1%;
 }
+
+.contact-title {
+  color: var(--on-hover-color);
+  text-underline-offset: 4px;
+  margin: auto;
+}
+
+
 
 
 /*------------------------------------- MEDIA QUERYS----- ----------------------------*/
@@ -470,6 +479,13 @@ body {
   }
   p.pricing-p {
     margin: 1.4em auto;
+  }
+  #contact p {
+    font-size: 1em;
+  }
+  .contact-title {
+    margin-top: 1em;
+    font-size: 1.1em;
   }
 }
 
@@ -543,6 +559,9 @@ body {
     margin: 1.6em auto;
     width: auto;
   }
+  .contact-title {
+    margin-top: 1em;
+  }
 }
 
 @media (min-width: 1080px) {
@@ -552,7 +571,10 @@ body {
   p.pricing-p {
     width: auto;
   }
-  #contact img {
-    
+  #deleon-carlos-contact {
+    width: 620px;
+  }
+  #contact p {
+    margin: auto;
   }
 }
