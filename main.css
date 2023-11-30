@@ -415,11 +415,17 @@ body {
   border-radius: 1%;
 }
 
-.contact-title {
+.contact-title, h3 {
   color: var(--on-hover-color);
   text-underline-offset: 4px;
   margin: auto;
 }
+
+#contact-info a {
+  text-decoration: none;
+}
+
+
 
 
 
