@@ -436,6 +436,14 @@ body {
   color: var(--on-hover-color);
 }
 
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 400px;
+  padding: 3.6em 1em;
+}
+
 
 
 
