@@ -425,6 +425,17 @@ body {
   text-decoration: none;
 }
 
+#contact-info a:hover {
+  color: var(--on-hover-color);
+  text-decoration: underline 2px var(--title-blue);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.contact-name {
+  color: var(--on-hover-color);
+}
+
 
 
 
