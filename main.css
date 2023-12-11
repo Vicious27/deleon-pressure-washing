@@ -436,6 +436,11 @@ body {
   color: var(--on-hover-color);
 }
 
+.social-media img {
+  width: 40px;
+  margin: 0 20px 0 0;
+}
+
 
 
 
