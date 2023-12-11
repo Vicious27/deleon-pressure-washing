@@ -436,14 +436,6 @@ body {
   color: var(--on-hover-color);
 }
 
-#contact form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 400px;
-  padding: 3.6em 1em;
-}
-
 
 
 
@@ -512,6 +504,9 @@ body {
     margin-top: 1em;
     font-size: 1.1em;
   }
+  section#contact-info {
+    font-size: .7em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -550,6 +545,12 @@ body {
   .our-commitment h1 {
     font-size: 1.3em;
   }
+  section#contact-info {
+    font-size: .6em;
+  }
+  .contact-title {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 810px) {
@@ -585,7 +586,10 @@ body {
     width: auto;
   }
   .contact-title {
-    margin-top: 1em;
+    margin-top: .8em;
+  }
+  section#contact-info {
+    font-size: .7em;
   }
 }
 
