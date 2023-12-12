@@ -356,6 +356,14 @@ body {
   border-radius: 50%;
 }
 
+.commercial-gallery {
+  margin: 20px 0;
+}
+
+.the-salty {
+  margin: 20px 0;
+}
+
 
 /*--------------------------------- SERVICES ----------------------------*/
 #pricing {
