@@ -330,7 +330,7 @@ body {
 
 /*--------------------COMMERCIAL GALLERY --------------------*/
 .commercial-message {
-  font-size: .7em;
+  font-size: .8em;
 }
 
 #gallery .icon-water-commercial {
@@ -347,6 +347,13 @@ body {
   height: 40px;
   margin: -6px 15px;
   border-bottom: solid 2px var(--nav-blue);
+  cursor: pointer;
+}
+
+.commercial-email-icon:hover, .commercial-email-icon:active {
+  box-shadow: inset 100px 0 0 0 var(--nav-blue);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  border-radius: 50%;
 }
 
 
@@ -451,6 +458,7 @@ body {
   color: var(--on-hover-color);
   text-decoration: underline 2px var(--title-blue);
   text-underline-offset: 4px;
+  transition: ease-in-out .2s;
   cursor: pointer;
 }
 
