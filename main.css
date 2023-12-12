@@ -338,6 +338,10 @@ body {
   height: 35px;
 }
 
+.icon-message {
+  margin: -3px 0;
+}
+
 
 /*--------------------------------- SERVICES ----------------------------*/
 #pricing {
@@ -518,6 +522,13 @@ body {
   }
   section#contact-info {
     font-size: .7em;
+  }
+  #gallery .icon-water-commercial {
+    width: 25px;
+    height: 25px;
+  }
+  .icon-message {
+    margin: -3px 0;
   }
 }
 
