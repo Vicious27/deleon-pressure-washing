@@ -328,6 +328,17 @@ body {
   margin-left: 0;
 }
 
+/*--------------------COMMERCIAL GALLERY --------------------*/
+.commercial-message {
+  font-size: .7em;
+}
+
+#gallery .icon-water-commercial {
+  width: 35px;
+  height: 35px;
+}
+
+
 /*--------------------------------- SERVICES ----------------------------*/
 #pricing {
   background: var(--background-white);
@@ -440,10 +451,6 @@ body {
   width: 40px;
   margin: 0 20px 0 0;
 }
-
-
-
-
 
 
 /*------------------------------------- MEDIA QUERYS----- ----------------------------*/
