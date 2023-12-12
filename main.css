@@ -342,6 +342,13 @@ body {
   margin: -3px 0;
 }
 
+.commercial-email-icon {
+  width: 40px;
+  height: 40px;
+  margin: -6px 15px;
+  border-bottom: solid 2px var(--nav-blue);
+}
+
 
 /*--------------------------------- SERVICES ----------------------------*/
 #pricing {
@@ -529,6 +536,13 @@ body {
   }
   .icon-message {
     margin: -3px 0;
+  }
+  .commercial-email-icon {
+    width: 35px;
+    height: 35px;
+    margin: -10px 10px;
+    border-bottom: solid 2px var(--nav-blue);
+    cursor: pointer;
   }
 }
 
