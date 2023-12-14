@@ -91,3 +91,24 @@ carousel.addEventListener("mouseup", dragStop);
 
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+// //back to top button
+// let myButton = document.getElementById("myBtn");
+
+// //when user scrolls down 40px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+//     myButton.style.display = "block";
+//   } else {
+//     myButton.style.display = "none";
+//   }
+// };
+
+// //When user clicks on the button, scroll tot he top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+

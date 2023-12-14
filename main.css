@@ -266,6 +266,27 @@ body {
   padding: 5px;
 }
 
+/* #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--p-blue);
+  color: var(--background-white);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: .8em;
+}
+
+#myBtn:hover {
+  background-color: var(--nav-blue);
+  transition: 1s ease;
+} */
+
 /*--------------------------------- REVIEWS ----------------------------*/
 #reviews {
   max-width: 1600px;
